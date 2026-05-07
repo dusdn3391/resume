@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #fafaf8;
+  --bg2: #f4f4f0;
+  --surface: #ffffff;
+  --surface2: #f0f0eb;
+  --border: #e5e5e0;
+  --border2: #d0d0c8;
+  --accent: #111118;
+
+  /* ✅ 채도 낮은 슬레이트 인디고 */
+  --accent2:    #5B6B8A;   /* 메인 포인트 — role 텍스트, dot, 링크 */
+  --accent2-lt: #8396B4;   /* 밝은 버전 — hover */
+  --accent2-bg: #EEF1F6;   /* 배경 틴트 — 뱃지 bg 등 */
+  --accent2-dk: #3D4F6B;   /* 어두운 버전 — 강조 */
+
+  --accent3:  #10B981;     /* 에메랄드 — 해결방법 등 긍정 컬러 */
+  --highlight: #F59E0B;    /* 앰버 */
+  --danger:    #F43F5E;
+
+  --text:       #111118;
+  --text-muted: #6b6b75;
+  --text-dim:   #a0a0aa;
+
+  --font-display: 'DM Serif Display', serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  --radius: 12px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.1), 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* 나머지 reset, 애니메이션 그대로 */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+::selection { background: #D6DDE8; color: var(--text); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50%       { transform: translateY(-10px) rotate(1deg); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes scaleIn {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
