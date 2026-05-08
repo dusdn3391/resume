@@ -1,4 +1,4 @@
-# 최연우 포트폴리오 🚀
+# 최연우 포트폴리오
 
 > Next.js 14 App Router + CSS Modules로 제작된 개인 포트폴리오
 
