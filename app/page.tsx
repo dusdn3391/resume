@@ -61,7 +61,7 @@ const PROJECTS = [
     desc: '스크린골프장 Room 예약 시스템 프론트엔드 개발 프로젝트.',
     tech: ['Vue', 'JavaScript', 'REST API', 'CSS'],
     live: '',
-    github: '',
+    github: 'https://github.com/dusdn3391/lezuro',
     highlight: '#fef3c7',
   },
   {
@@ -72,7 +72,7 @@ const PROJECTS = [
     desc: 'Next.js 기반 콘서트 티켓 예매 플랫폼 개인 프로젝트.',
     tech: ['Next.js', 'TypeScript', 'Zustand', 'PostgreSQL'],
     live: '',
-    github: '',
+    github: 'https://github.com/dusdn3391/concert-ticketing',
     highlight: '#d1fae5',
   },
 {
@@ -90,7 +90,7 @@ const PROJECTS = [
   ],
   live: "",
   highlight: "#f3e8d0",
-  github: "",
+  github: "https://github.com/dusdn3391/kosta311",
 },
 {
   id: "dementia-analysis",
@@ -107,7 +107,7 @@ const PROJECTS = [
   ],
   live: "",
   highlight: "#dbeafe",
-  github: "",
+  github: "https://github.com/dusdn3391/Dementia",
 },
 ]
 
