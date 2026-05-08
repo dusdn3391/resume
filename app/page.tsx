@@ -372,7 +372,7 @@ export default function Home() {
               <span className={styles.pbUrlDomain}>junjunior.vercel.app</span>
             </div>
             <a
-              href="https://junjunior.vercel.app"
+              href="https://resume-three-lilac-95.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className={styles.btnFilled}

@@ -53,6 +53,7 @@ npm run dev
 ```bash
 npm run build
 # Vercel CLI 또는 GitHub 연동으로 자동 배포
+https://resume-three-lilac-95.vercel.app/
 ```
 
 ---
