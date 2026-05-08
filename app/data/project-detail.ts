@@ -1,5 +1,21 @@
-export const PROJECT_DETAILS = {
-  "fortune-cafe": {
+export interface ProjectProblem {
+  title: string;
+  problem: string;
+  solution: string;
+}
+
+export interface ProjectDetail {
+  title: string;
+  subtitle: string;
+  tech: string[];
+  role: string;
+  year: number;
+  images: string[];
+  overview: string;
+  problems: ProjectProblem[];
+}
+
+export const PROJECT_DETAILS: Record<string, ProjectDetail> = {  "fortune-cafe": {
     title: "운세다방 (구 타로프렌즈)",
     subtitle: "운세·타로·사주 전화 상담 플랫폼 유지보수",
     tech: ["Vue", "JavaScript", "Node.js", "REST API", "MySQL"],

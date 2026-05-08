@@ -230,9 +230,9 @@ export default function Home() {
             </h2>
 
             <p className={styles.aboutText}>
-              2023년 독학으로 시작해, 부트캠프를 거쳐 현재 스타트업에서
-              풀스택 개발자로 일하고 있습니다. 아직 배울 게 많다는 걸 알지만,
-              그래서 매일이 성장하는 기분입니다.
+              2023년 독학으로 시작해, 부트캠프를 거쳐 회사에서
+              풀스택 개발자로 일을 하였습니다. 아직 배울 게 많다는 걸 알고 있기 때문에,
+              많은 것을 배우고 성정해 나아가는 개발자입니다.
             </p>
             <p className={styles.aboutText}>
               프론트엔드 UI/UX부터 백엔드 API 설계, DB 모델링까지 혼자
@@ -368,7 +368,6 @@ export default function Home() {
           </div>
           <div className={styles.pbRight}>
             <div className={styles.pbUrl}>
-              <span className={styles.pbUrlProtocol}>https://</span>
               <span className={styles.pbUrlDomain}>https://resume-three-lilac-95.vercel.app</span>
             </div>
             <a
