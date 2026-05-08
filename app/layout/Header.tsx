@@ -62,9 +62,9 @@ export default function Header() {
         ))}
       </ul>
 
-      <a href="mailto:junjunior@email.com" className={styles.navContact}>
+      {/* <a href="mailto:junjunior@email.com" className={styles.navContact}>
         연락하기 →
-      </a>
+      </a> */}
     </nav>
   )
 }
