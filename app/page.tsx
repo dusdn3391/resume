@@ -369,7 +369,7 @@ export default function Home() {
           <div className={styles.pbRight}>
             <div className={styles.pbUrl}>
               <span className={styles.pbUrlProtocol}>https://</span>
-              <span className={styles.pbUrlDomain}>junjunior.vercel.app</span>
+              <span className={styles.pbUrlDomain}>https://resume-three-lilac-95.vercel.app</span>
             </div>
             <a
               href="https://resume-three-lilac-95.vercel.app/"
