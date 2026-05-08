@@ -5,8 +5,11 @@ export const PROJECT_DETAILS = {
     tech: ["Vue", "JavaScript", "Node.js", "REST API", "MySQL"],
     role: "유저 페이지, 선생님 페이지, 관리자 페이지 유지보수 및 API 연동",
     year: 2023,
-    images: [],
-    overview:
+    images: [
+       "/images/taro/1.png",
+       "/images/taro/2.png",
+       "/images/taro/3.png",
+    ],    overview:
       "운세, 타로, 사주 상담을 전화로 진행할 수 있는 플랫폼입니다. 사용자는 선생님과 전화 상담을 진행하고, 상담 시간에 따라 분당 200원씩 금액이 차감되는 구조입니다.",
 
     problems: [
@@ -70,8 +73,13 @@ export const PROJECT_DETAILS = {
 
     role: "프론트엔드 전반 담당",
     year: 2023,
-    images: [],
+  images: [
+       "/images/golf/1.png",
+       "/images/golf/2.png",
+       "/images/golf/3.png",
+       "/images/golf/4.jpg",
 
+    ],
     overview:
       "스크린골프장의 Room을 날짜와 시간에 맞춰 예약할 수 있는 플랫폼입니다.",
 
@@ -127,7 +135,11 @@ export const PROJECT_DETAILS = {
 
     role: "기획, UI 구현, 예매 플로우 개발",
     year: 2025,
-    images: [],
+    images: [
+       "/images/concert/1.png",
+       "/images/concert/2.png",
+       "/images/concert/3.png",
+    ],
 
     overview:
       "콘서트 예매 과정을 날짜 선택, 회차 선택, 좌석 선택 흐름으로 구현한 프로젝트입니다.",
@@ -171,7 +183,13 @@ export const PROJECT_DETAILS = {
 
     role: "기획, UI 디자인, 애니메이션 및 API 연동 구현",
     year: 2024,
-    images: [],
+    images: [
+      "/images/cake/1.png",
+       "/images/cake/2.png",
+       "/images/cake/3.png",
+       "/images/cake/4.PNG",
+
+    ],
 
     overview:
       "유럽풍 베이지 & 초콜릿 테마를 기반으로 제작한 제과·제빵 레시피 웹 프로젝트입니다. SVG 케이크와 촛불 애니메이션을 활용한 인트로 화면, Spoonacular API 기반 레시피 조회, 파티클 및 연기 효과 등 감성적인 UI/UX를 구현했습니다.",
@@ -218,7 +236,11 @@ export const PROJECT_DETAILS = {
 
     role: "데이터 전처리, 분석 및 시각화 구현",
     year: 2025,
-    images: [],
+    images: [
+  "/images/dementia/1.png",
+       "/images/dementia/2.png",
+       "/images/dementia/3.png"
+      ],
 
     overview:
       "공공데이터를 활용하여 지역별 노인 인구, 추정 치매 환자 수, 요양시설 정원을 비교 분석한 프로젝트입니다. 데이터 전처리 및 병합, 지도 시각화와 그래프 분석을 통해 지역별 요양시설 수요-공급 불균형을 분석했습니다.",

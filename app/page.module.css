@@ -159,6 +159,7 @@
   letter-spacing: 0;
 }
 
+/* ✅ Instrument Serif → DM Serif Display */
 .headlineMain {
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 7vw, 5.5rem);
@@ -171,13 +172,14 @@
   width: fit-content;
 }
 
+/* ✅ 밑줄 색상 → accent2 계열 */
 .headlineUnderline {
   position: absolute;
   bottom: 4px;
   left: 0;
   right: 0;
   height: 6px;
-  background: #c7d2fe;
+  background: var(--accent2-bg);
   border-radius: 3px;
   z-index: -1;
   transform-origin: left;
@@ -195,9 +197,10 @@
   margin-top: 0.3rem;
 }
 
+/* ✅ roleTag 색상 → accent2 계열 */
 .roleTag {
-  background: #e0e7ff;
-  color: #4338ca;
+  background: var(--accent2-bg);
+  color: var(--accent2-dk);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.2rem 0.65rem;
@@ -287,6 +290,7 @@
   gap: 2px;
 }
 
+/* ✅ metaVal: font-display (DM Serif Display) 유지 — 숫자엔 세리프가 잘 어울림 */
 .metaVal {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -329,10 +333,11 @@
   text-align: center;
 }
 
+/* ✅ avatarCircle 색상 → accent2-bg */
 .avatarCircle {
   width: 96px;
   height: 96px;
-  background: #e0e7ff;
+  background: var(--accent2-bg);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -342,9 +347,11 @@
 
 .avatarInfo { display: flex; flex-direction: column; gap: 4px; }
 
+/* ✅ avatarName → Inter bold (세리프 제거) */
 .avatarName {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--text);
   letter-spacing: -0.02em;
 }
@@ -469,13 +476,13 @@
   letter-spacing: 0.1em;
 }
 
+/* ✅ secTitle: 이탤릭 세리프 → Inter bold */
 .secTitle {
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-family: var(--font-body);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.04em;
-  font-weight: 400;
-  font-style: italic;
+  letter-spacing: -0.03em;
 }
 
 .secLine {
@@ -494,22 +501,34 @@
   align-items: start;
 }
 
-.aboutQuote {
-  font-family: var(--font-display);
-  font-size: 1.9rem;
-  font-style: italic;
-  line-height: 1.4;
-  color: var(--text);
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
+/* ✅ aboutQuote 제거 → aboutEyebrow + aboutHeadline로 교체 */
+.aboutEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 0.9rem;
 }
 
-.aboutQuote em {
-  font-style: normal;
+.aboutHeadline {
+  font-family: var(--font-body);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.aboutAccent {
   color: var(--accent2);
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 4px;
+}
+
+.aboutMuted {
+  color: var(--text-dim);
+  font-weight: 400;
 }
 
 .aboutText {
@@ -662,7 +681,9 @@
   padding-top: 0;
 }
 
+/* ✅ tlCompany → Inter bold */
 .tlCompany {
+  font-family: var(--font-body);
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text);
@@ -734,7 +755,7 @@
 .projBg {
   position: absolute;
   inset: 0;
-  background: var(--card-hl, #e0e7ff);
+  background: var(--card-hl, var(--accent2-bg));
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
@@ -758,11 +779,13 @@
   color: var(--text-dim);
 }
 
+/* ✅ projName → Inter bold */
 .projName {
-  font-size: 1.3rem;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin-bottom: 0.6rem;
   position: relative;
   z-index: 1;
@@ -831,12 +854,13 @@
   overflow: hidden;
 }
 
+/* ✅ 그라디언트 상단 바 → accent2 계열로 */
 .portfolioBox::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #818cf8, #34d399, #fbbf24);
+  background: linear-gradient(90deg, var(--accent2), var(--accent3), var(--highlight));
 }
 
 .pbLeft {}
@@ -851,12 +875,13 @@
   margin-bottom: 0.5rem;
 }
 
+/* ✅ pbTitle → Inter bold (이탤릭 세리프 제거) */
 .pbTitle {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-style: italic;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
 }
 
@@ -904,7 +929,8 @@
   gap: 1rem;
 }
 
-.footerName  { font-family: var(--font-display); font-size: 1rem; font-style: italic; color: var(--text); }
+/* ✅ footerName → Inter bold */
+.footerName  { font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; }
 .footerSep   { color: var(--border2); }
 .footerCopy  { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); }
 .footerMade  { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-left: auto; }

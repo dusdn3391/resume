@@ -6,7 +6,7 @@ export default function Footer() {
       return (
             <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span className={styles.footerName}>준주니어</span>
+          <span className={styles.footerName}>최연우</span>
           <span className={styles.footerSep}>·</span>
           <span className={styles.footerCopy}>© 2024</span>
           <span className={styles.footerSep}>·</span>

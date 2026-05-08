@@ -1,141 +1,265 @@
-.detailPage {
-  max-width: 960px;
+.main {
+  max-width: 860px;
   margin: 0 auto;
-  padding: 20px 24px;
-  color: #111827;
-}
-
-.notFound {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px 24px;
+  padding: 2rem 1.5rem 6rem;
 }
 
 .backLink {
-  display: inline-block;
-  margin-bottom: 40px;
-  font-size: 14px;
-  color: #4f46e5;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-dim);
   text-decoration: none;
+  margin-bottom: 3rem;
+  transition: color 0.15s;
+  font-family: var(--font-body);
+}
+
+.backLink:hover { color: var(--text); }
+
+/* ── 히어로 ── */
+.eyebrow {
+  font-size: 11px;
   font-weight: 600;
-}
-
-.backLink:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  margin-bottom: 56px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #e5e7eb;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.85rem;
+  font-family: var(--font-mono);
 }
 
 .title {
-  font-size: 42px;
-  line-height: 1.2;
-  margin: 0 0 14px;
-  letter-spacing: -0.04em;
+  font-family: var(--font-body);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
 }
 
 .subtitle {
-  font-size: 18px;
-  color: #6b7280;
-  margin: 0 0 28px;
-  line-height: 1.7;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  font-family: var(--font-body);
 }
 
-.techList {
+.techRow {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
+  margin-bottom: 2.5rem;
 }
 
-.techChip {
-  padding: 8px 13px;
+.techBadge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 12px;
   border-radius: 999px;
-  background: #f1f5f9;
-  color: #334155;
-  font-size: 14px;
-  font-weight: 600;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
 }
 
-.section {
-  margin-bottom: 56px;
+/* ── 캐러셀 ── */
+.carouselWrap {
+  margin-bottom: 3rem;
 }
 
-.sectionTitle {
-  font-size: 24px;
-  margin: 0 0 18px;
-  letter-spacing: -0.03em;
+.carousel {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg2);
+  border: 1px solid var(--border);
 }
 
-.text {
+.slides {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+  min-width: 100%;
+  aspect-ratio: 16 / 8;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text);
   font-size: 16px;
-  line-height: 1.9;
-  color: #374151;
-  margin: 0;
+  z-index: 2;
+  transition: background 0.15s;
+}
+
+.carouselBtn:hover { background: var(--surface2); }
+.btnPrev { left: 14px; }
+.btnNext { right: 14px; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.dotActive { background: var(--text-muted); }
+
+/* ── 구분선 ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 3rem;
+}
+
+/* ── 개요 + 역할 ── */
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 3rem;
+}
+
+.infoCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem 1.5rem;
+}
+
+.infoCardLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+  font-family: var(--font-mono);
+}
+
+.infoCardText {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+
+/* ── 문제 & 해결 ── */
+.problemsLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
 }
 
 .problemList {
-  display: grid;
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.problemCard {
-  position: relative;
-  padding: 30px;
-  border: 1px solid #e5e7eb;
-  border-radius: 24px;
-  background: #ffffff;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+.problemItem {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
 }
 
-.problemNumber {
-  display: inline-block;
-  margin-bottom: 14px;
-  font-size: 13px;
-  font-weight: 800;
-  color: #4f46e5;
-  letter-spacing: 0.08em;
+.problemHead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 1rem 1.25rem;
+}
+
+.problemNum {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-dim);
+  min-width: 18px;
+  font-family: var(--font-mono);
 }
 
 .problemTitle {
-  font-size: 22px;
-  margin: 0 0 24px;
-  letter-spacing: -0.03em;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-body);
 }
 
-.problemBlock {
-  padding: 20px;
-  border-radius: 18px;
-  background: #f8fafc;
-  margin-top: 16px;
+.problemCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
 }
 
-.problemBlock h4 {
-  margin: 0 0 8px;
-  font-size: 15px;
-  color: #111827;
+.problemCol {
+  padding: 1rem 1.25rem;
 }
 
-.problemBlock p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.8;
-  color: #4b5563;
+.problemCol:first-child {
+  border-right: 1px solid var(--border);
 }
 
-@media (max-width: 768px) {
-  .detailPage,
-  .notFound {
-    padding: 72px 18px;
-  }
+.problemColLabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+}
 
-  .title {
-    font-size: 32px;
-  }
+.labelProblem { color: #b85030; }
+.labelSolution { color: #2b7a5f; }
 
-  .problemCard {
-    padding: 24px;
-  }
+.problemColText {
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+
+/* ── 404 ── */
+.notFound {
+  padding: 5rem 1.5rem;
+}
+
+/* ── 반응형 ── */
+@media (max-width: 640px) {
+  .infoGrid { grid-template-columns: 1fr; }
+  .problemCols { grid-template-columns: 1fr; }
+  .problemCol:first-child { border-right: none; border-bottom: 1px solid var(--border); }
 }
