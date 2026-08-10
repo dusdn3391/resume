@@ -18,7 +18,7 @@ export const CAREER: CareerItem[] = [
     type: "work",
   },
   {
-    period: "2026.02 — 2026.06",
+    period: "2026.02 — 2026.07",
     company: "KOSTA",
     role: "AI 활용 Node.js 개발자 과정",
     desc: "AI를 활용한 개발 방식과 Node.js 기반 백엔드 개발을 학습하고 있습니다. 기존 Vue 실무 경험을 바탕으로 React, Next.js, Node.js 등 최신 웹 개발 역량을 확장하고 있습니다.",
