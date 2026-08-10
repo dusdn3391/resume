@@ -1,7 +1,5 @@
 # 최연우 포트폴리오 🚀
 
-# 최연우 포트폴리오
-
 > Next.js 14 App Router + CSS Modules로 제작된 개인 포트폴리오
 
 ## 📁 프로젝트 구조
@@ -57,7 +55,6 @@ npm run build
 # Vercel CLI 또는 GitHub 연동으로 자동 배포
 
 https://resume-three-lilac-95.vercel.app/
->>>>>>> db32da6c988d395732a56166e4025a51cf544025
 ```
 
 ---
