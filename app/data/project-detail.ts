@@ -157,7 +157,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
       "/images/concert/2.png",
       "/images/concert/3.png",
     ],
-    architecture: "",
+    architecture: "/images/concert/architecture.JPG",
 
     overview:
       "콘서트 예매 과정을 날짜 선택, 회차 선택, 좌석 선택 흐름으로 구현한 프로젝트입니다.",
@@ -406,13 +406,8 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
 
     year: 2025,
 
-    images: [
-      "/images/baby-monitor/1.png",
-      "/images/baby-monitor/2.png",
-      "/images/baby-monitor/3.png",
-    ],
-    architecture: "",
-
+    images: [],
+    architecture: "/images/baby-monitor/architecture.JPG",
     overview:
       "웹캠과 마이크를 활용하여 아기의 수면 중 위험 상황을 실시간으로 감지하는 AI 모니터링 시스템입니다. MediaPipe를 이용한 자세 및 얼굴 인식, OpenCV 기반 움직임 분석, YAMNet 오디오 AI 모델을 활용한 울음소리 감지를 통해 부모가 즉시 위험 상황을 인지할 수 있도록 구현했습니다.",
 
